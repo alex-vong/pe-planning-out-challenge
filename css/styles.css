@@ -3,20 +3,47 @@
 
 html {
 	background-color: #fff4e1;
-	padding: 15px;
 }
 
-header h1 {
+/* COLUMN STRUCTURE */
+.inner-column {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px 14px;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2 {
 	font-family: monaco;
 	font-size: 40px;
 }
 
-header p {
-	font-family: 'helvetica neue';
-	font-size: 18px;
-	line-height: 1.5;
+h2 {
+	font-size: 30px;
 }
 
 p {
+	font-family: 'helvetica neue';
+	font-size: 18px;
+	line-height: 1.5;
 	margin-top: 15px;
+}
+
+h1 + p,
+h2 + p {
+	margin-top: 20px;
+}
+
+/* SITE SECTIONS */
+.site-header {
+	background-color: #1e90ff;
+}
+
+.about {
+	background-color: #7caa5d;
+}
+
+.contact {
+	background-color: #ff3f50;
 }

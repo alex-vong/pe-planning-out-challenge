@@ -9,11 +9,11 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* Site Nav Bar */
-.site-header {
-	max-width: 100%;
-	position: sticky;
-	top: 0;
+/* SITE STRUCTURES */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 .nav-inner-column {
@@ -33,6 +33,14 @@ html {
 
 .nav-links a {
 	margin: 0 15px;
+}
+
+/* footer */
+.site-footer {
+	width: 100%;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 20px;
 }
 
 /* COLUMN STRUCTURE */
@@ -66,6 +74,12 @@ h2 + p {
 }
 
 /* SITE SECTIONS */
+
+.page-content {
+	flex-grow: 1;
+	border: 1px solid red;
+}
+
 .page-header {
 	background-color: #1e90ff;
 	color: #000;
@@ -79,21 +93,10 @@ h2 + p {
 	background-color: #ff3f50;
 }
 
-/* footer */
-.site-footer {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	color: #fff;
-	padding: 10px 20px;
-	font-size: 20px;
-}
-
 /* MEDIA Queries */
 
 @media (min-width: 501px) {
-	body {
+	.page-content {
 		background: url('https://images.unsplash.com/photo-1482784160316-6eb046863ece?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80')
 			no-repeat center center/cover;
 	}
@@ -110,6 +113,12 @@ h2 + p {
 
 	.page-header {
 		background-color: #00587a;
+	}
+
+	.page-header,
+	.about,
+	.contact {
+		flex-grow: 1;
 	}
 
 	.inner-column {

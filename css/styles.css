@@ -12,7 +12,6 @@ html {
 /* Site Nav Bar */
 .site-header {
 	max-width: 100%;
-	background-color: #7caa5d;
 	position: sticky;
 	top: 0;
 }
@@ -71,11 +70,24 @@ h2 + p {
 	background-color: #1e90ff;
 	color: #000;
 }
-.about {
+.about,
+.site-header,
+.site-footer {
 	background-color: #7caa5d;
 }
 .contact {
 	background-color: #ff3f50;
+}
+
+/* footer */
+.site-footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 20px;
 }
 
 /* MEDIA Queries */

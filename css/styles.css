@@ -121,6 +121,6 @@ h2 + p {
 	}
 
 	.inner-column {
-		max-width: min(80%, 1000px);
+		max-width: min(80%, 1440px);
 	}
 }

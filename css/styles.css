@@ -77,7 +77,6 @@ h2 + p {
 
 .page-content {
 	flex-grow: 1;
-	border: 1px solid red;
 }
 
 .page-header {

@@ -121,6 +121,13 @@ h2 + p {
 
 	.page-header {
 		background-color: #00587a;
+		height: 70vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.page-header h1 p {
+		margin: 30px 0;
 	}
 
 	.page-header,
